@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>CodeME.eu</title>
+    <!-- let's reset all settings-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <!-- fontawesome cdn for icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- yes, we use bootstrap grid-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- main stylesheet link        -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- test stylesheet - delete after work done-->
+    <link rel="stylesheet" href="test.css">
+  </head>
+  <body>
+    <!-- Here is the place for some fun-->
+    
+    <div class="container-fluid">
+          
+      <header class="row">
+        <nav class="navbar-sticky container">
+          <div class="col-md-5 left">
+            <img src="img/logo.png" class="site-logo" alt="CodeMe">
+          </div>
+          <div class="col-md-5 text-right">
+            <button type="button" class="hamburger"></button>
+          </div>
+        </nav>
+
+        <div class="container">
+          <h3>Tworzymy profesjonalne strony internetowe</h3>
+          <p>Jesteś w CodeMe, więc prawdopodobnie szukasz kogoś, kto wykona dla Ciebie profesjonalną stronę internetową. Dobrze trafiłeś!</p>
+
+          <a href="#portfolio" class="btn">Nasze strony</a>
+          <a href="#contact" class="btn">Zatrudnij nas</a>
+        </div>
+      </header>
+
+      <section id="rules" class="row">
+        <div class="container">
+          <div class="col-xs-12 col-md-5 text-right">
+            <h3>Projekty wykonujemy, trzymając się trzech zasad</h3>
+
+            <article class="rule icon-clock">
+              <h5>Terminowo</h5>
+              <p>Nie ma możliwości, byśmy prosili Cię o przesunięcie deadline'u czy nie odpowiadali na maile. Po wycenie projektu podajemy czas w jakim zostanie on wykonany i się go ściśle trzymamy.</p>
+            </article>
+            <article class="rule icon-phone">
+              <h5>Profesjonalnie</h5>
+              <p>Strony internetowe wykonane przez nas są zgodne z najnowszymi standardami. Kod jest najwyższej jakości, sprawdzany wcześniej w walidatorach, by był jak najlepiej oceniany przez wyszukiwarki.</p>
+            </article>
+            <article class="rule icon-heart">
+              <h5>Pięknie</h5>
+              <p>Nie zapominamy o tym, że Twoja strona internetowa ma wyglądać pięknie, nowocześnie, według najnowszych trendów. W naszym zespole znajdziesz także grafika, który wykona dla Ciebie niezbędne projekty, np. logo.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+      <section id="we-believe" class="row">
+        <div class="container">
+          <div class="col-xs-12 col-md-6">
+            Wierzymy że czyny mówią więcej niż słowa
+          </div>
+          <div class="col-xs-12 col-md-5">
+            <a href="#portfolio">Nasze strony</a>
+          </div>
+        </div>
+      </section>
+      
+      <section id="experts" class="row">
+        <div class="container">
+          <h3>Zespół najlepszych specjalistów</h3>
+          <div class="col-xs-12">
+            <!--slider-->
+          </div>
+        </div>
+      </section>
+      
+      <section id="we-do" class="row">
+        <div class="container">
+          <div class="col-md-6 col-md-push-5">
+            <h3>Robimy to, czego aktualnie potrzebujesz</h3>
+            
+            <ul class="we-do-types">
+              <li>Strony wizytówki</li>
+              <li>Blogi</li>
+              <li>Rozbudowane strony WWW</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <div class="container">
+        
+          <h3>Nie czekaj, skontaktuj się</h3>
+          
+          <div class="col-md-5">
+            
+            <ul class="contact-methods">
+              <li><a href="tel:+48739288022">+48 739 288 022</a></li>
+              <li><a href="mailto:kontakt@codeme.eu">kontakt@codeme.eu</a></li>
+              <li><a href="http://facebook.com/CodeMe">/codeme</a></li>
+            </ul>
+            
+          </div>
+          <div class="col-md-5">
+          
+            <form method="post" action="contact.php">
+              <input type="text" name="user_name" id="user_name" placeholder="imię i nazwisko">
+              <input type="text" name="user_email" id="user_email" placeholder="adres e-mail">
+              <input type="text" name="user_subject" id="user_subject" placeholder="temat wiadomości">
+              <textarea name="user_message" id="user_message" placeholder="treść wiadomości"></textarea>
+              <input type="submit" value="Wyślij">
+            </form>
+          
+          </div>
+        
+        </div>
+      </section>
+    </div>
+    
+    <!-- import jquery //-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- our custom js fun staff-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
