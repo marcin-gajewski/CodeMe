@@ -22,108 +22,120 @@
     
     <div class="container-fluid">
           
-      <header class="row">
-        <nav class="navbar-sticky container">
-          <div class="col-md-5 left">
-            <img src="img/logo.png" class="site-logo" alt="CodeMe">
+      <header class="header row">
+        <nav class="navbar navbar--sticky container">
+          <div class="navbar__logo col-xs-12 col-md-6">
+            <a href="home.html" class="navbar__logo--link">
+              <img src="img/logo.png" class="navbar__logo--image img-responsive" alt="CodeMe">
+            </a>
           </div>
-          <div class="col-md-5 text-right">
-            <button type="button" class="hamburger"></button>
+          <div class="navbar__navigation col-xs-12 col-md-6 text-right">
+            <button type="button" class="navbar__hamburger fa fa-bars"></button>
           </div>
         </nav>
 
-        <div class="container">
+        <div class="header__content container">
           <h3>Tworzymy profesjonalne strony internetowe</h3>
           <p>Jesteś w CodeMe, więc prawdopodobnie szukasz kogoś, kto wykona dla Ciebie profesjonalną stronę internetową. Dobrze trafiłeś!</p>
 
-          <a href="#portfolio" class="btn">Nasze strony</a>
-          <a href="#contact" class="btn">Zatrudnij nas</a>
+          <a href="#" class="btn">Nasze strony</a>
+          <a href="#" class="btn">Zatrudnij nas</a>
         </div>
       </header>
 
-      <section id="rules" class="row">
+      <section class="our-rules row">
         <div class="container">
-          <div class="col-xs-12 col-md-5 text-right">
-            <h3>Projekty wykonujemy, trzymając się trzech zasad</h3>
+          <div class="row">
+            <div class="our-rules__body col-xs-12 col-sm-6 col-md-5 col-md-push-1 text-right">
+              <h3 class="our-rules__heading">Projekty wykonujemy, trzymając się trzech zasad</h3>
 
-            <article class="rule icon-clock">
-              <h5>Terminowo</h5>
-              <p>Nie ma możliwości, byśmy prosili Cię o przesunięcie deadline'u czy nie odpowiadali na maile. Po wycenie projektu podajemy czas w jakim zostanie on wykonany i się go ściśle trzymamy.</p>
-            </article>
-            <article class="rule icon-phone">
-              <h5>Profesjonalnie</h5>
-              <p>Strony internetowe wykonane przez nas są zgodne z najnowszymi standardami. Kod jest najwyższej jakości, sprawdzany wcześniej w walidatorach, by był jak najlepiej oceniany przez wyszukiwarki.</p>
-            </article>
-            <article class="rule icon-heart">
-              <h5>Pięknie</h5>
-              <p>Nie zapominamy o tym, że Twoja strona internetowa ma wyglądać pięknie, nowocześnie, według najnowszych trendów. W naszym zespole znajdziesz także grafika, który wykona dla Ciebie niezbędne projekty, np. logo.</p>
-            </article>
+              <article class="our-rules__element rule icon-clock">
+                <h3 class="rule__header">Terminowo</h3>
+                <p class="rule__body">Nie ma możliwości, byśmy prosili Cię o przesunięcie deadline'u czy nie odpowiadali na maile. Po wycenie projektu podajemy czas w jakim zostanie on wykonany i się go ściśle trzymamy.</p>
+              </article>
+              <article class="our-rules__element rule icon-phone">
+                <h3 class="rule__header">Profesjonalnie</h3>
+                <p class="rule__body">Strony internetowe wykonane przez nas są zgodne z najnowszymi standardami. Kod jest najwyższej jakości, sprawdzany wcześniej w walidatorach, by był jak najlepiej oceniany przez wyszukiwarki.</p>
+              </article>
+              <article class="our-rules__element rule icon-heart">
+                <h3 class="rule icon-phone">Pięknie</h3>
+                <p class="rule__body">Nie zapominamy o tym, że Twoja strona internetowa ma wyglądać pięknie, nowocześnie, według najnowszych trendów. W naszym zespole znajdziesz także grafika, który wykona dla Ciebie niezbędne projekty, np. logo.</p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
       
-      <section id="we-believe" class="row">
-        <div class="container">
-          <div class="col-xs-12 col-md-6">
+      <section class="we-believe row">
+        <div class="we-believe__body container">
+          <div class="we-believe__left col-xs-12 col-md-6">
             Wierzymy że czyny mówią więcej niż słowa
           </div>
-          <div class="col-xs-12 col-md-5">
-            <a href="#portfolio">Nasze strony</a>
+          <div class="we-believe__right col-xs-12 col-md-6">
+            <a href="#portfolio" class="we-believe__btn btn">Nasze strony</a>
           </div>
         </div>
       </section>
       
-      <section id="experts" class="row">
-        <div class="container">
-          <h3>Zespół najlepszych specjalistów</h3>
-          <div class="col-xs-12">
+      <section class="experts row">
+        <div class="experts__body container">
+          <h3 class="experts__heading">Zespół najlepszych specjalistów</h3>
+          <div class="experts__carousel col-xs-12">
             <!--slider-->
           </div>
         </div>
       </section>
       
-      <section id="we-do" class="row">
-        <div class="container">
-          <div class="col-md-6 col-md-push-5">
-            <h3>Robimy to, czego aktualnie potrzebujesz</h3>
+      <section class="we-do row">
+        <div class="we-do__body container">
+          <div class="we-do__wrapper col-xs-12 col-md-6 col-md-push-5">
+            <h3 class="we-do__heading">Robimy to, czego aktualnie potrzebujesz</h3>
             
-            <ul class="we-do-types">
-              <li>Strony wizytówki</li>
-              <li>Blogi</li>
-              <li>Rozbudowane strony WWW</li>
+            <ul class="we-do__list works">
+              <li class="works__item">Strony wizytówki</li>
+              <li class="works__item">Blogi</li>
+              <li class="works__item">Rozbudowane strony WWW</li>
             </ul>
           </div>
         </div>
       </section>
       
-      <section id="contact" class="row">
-        <div class="container">
+      <section class="contact row">
+        <div class="contact__body container">
         
-          <h3>Nie czekaj, skontaktuj się</h3>
+          <h3 class="contact__headig">Nie czekaj, skontaktuj się</h3>
           
-          <div class="col-md-5">
+          <div class="contact__wrapper-left col-md-5">
             
-            <ul class="contact-methods">
-              <li><a href="tel:+48739288022">+48 739 288 022</a></li>
-              <li><a href="mailto:kontakt@codeme.eu">kontakt@codeme.eu</a></li>
-              <li><a href="http://facebook.com/CodeMe">/codeme</a></li>
+            <ul class="contact__methods">
+              <li class="contact__item"><a href="tel:+48739288022">+48 739 288 022</a></li>
+              <li class="contact__item"><a href="mailto:kontakt@codeme.eu">kontakt@codeme.eu</a></li>
+              <li class="contact__item"><a href="https://www.facebook.com/codemeeu/">/codeeeeu</a></li>
             </ul>
             
           </div>
-          <div class="col-md-5">
+          <div class="contact__wrapper-right col-md-5">
           
-            <form method="post" action="contact.php">
-              <input type="text" name="user_name" id="user_name" placeholder="imię i nazwisko">
-              <input type="text" name="user_email" id="user_email" placeholder="adres e-mail">
-              <input type="text" name="user_subject" id="user_subject" placeholder="temat wiadomości">
-              <textarea name="user_message" id="user_message" placeholder="treść wiadomości"></textarea>
-              <input type="submit" value="Wyślij">
+            <form class="form" method="post" action="contact.php">
+              <input class="form__field--name" type="text" name="user_name" placeholder="imię i nazwisko">
+              <input class="form__field--email" type="text" name="user_email" placeholder="adres e-mail">
+              <input class="form__field--subject" type="text" name="user_subject" placeholder="temat wiadomości">
+              <textarea class="form__field--message" name="user_message" placeholder="treść wiadomości"></textarea>
+              <input class="form__button--submit" type="submit" value="Wyślij">
             </form>
           
           </div>
         
         </div>
       </section>
+      
+      <footer class="footer row">
+        <div class="footer__body container">
+          
+          <p class="footer__copy text-center">&copy; 2016 CODEME</p>
+          
+        </div>
+      </footer>
     </div>
     
     <!-- import jquery //-->
