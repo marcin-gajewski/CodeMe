@@ -1,0 +1,135 @@
+doctype html
+html(lang='pl')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='description', content='')
+        meta(name='keywords', content='')
+        title CodeME.eu
+        // let's reset all settings
+        link( rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css")
+        // fontawesome cdn for icons
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
+        // yes, we use bootstrap grid
+        link(rel="stylesheet", href="css/bootstrap.css")
+        // main stylesheet link        
+        link(rel="stylesheet", href="css/style.css")
+        // test stylesheet - delete after work done
+        link(rel="stylesheet", href="test.css")
+    body
+        // Here is the place for some fun
+        
+        .container-fluid
+        
+          header.row
+            nav.navbar.navbar--sticky.container
+              .navbar__logo.col-xs-12.col-md-6
+                a.navbar__logo--link(href="#")
+                  img.navbar__logo--image.img-responsive(alt="Brand", src="img/logo.png")
+              .navbar__navigation.col-xs-12.col-md-6.text-right
+                button(type="button").navbar__hamburger.fa.fa-bars
+            .header__content.container
+            
+              h3.header__heading
+                | Tworzymy profesjonalne strony internetowe
+              p.header__body
+                | Jesteś w CodeMe, więc prawdopodobnie szukasz kogoś, kto wykona dla Ciebie profesjonalną stronę internetową. Dobrze trafiłeś!
+              
+              a.header__btn.btn(href="#")
+                | Nasze strony
+              a.header__btn.btn(href="#")
+                | Zatrudnij nas
+          
+          section.our-rules.row
+            .container
+              .row
+                .our-rules__body.col-xs-12.col-sm-6.col-md-5.col-md-push-1.text-right
+                  h3.our-rules__heading
+                    | Projekty wykonujemy, trzymając się trzech zasad
+                  
+                  article.our-rules__element.rule--clock
+                    h3.rule__header
+                      | Terminowo
+                    p.rule__body
+                      | Nie ma możliwości, byśmy prosili Cię o przesunięcie deadlineu czy nie odpowiadali na maile. Po wycenie projektu podajemy czas w jakim zostanie on wykonany i się go ściśle trzymamy.
+                  article.our-rules__element.rule--phone
+                    h3.rule__header
+                      | Profesjonalnie
+                    p.rule__body
+                      | Strony internetowe wykonane przez nas są zgodne z najnowszymi standardami. Kod jest najwyższej jakości, sprawdzany wcześniej w walidatorach, by był jak najlepiej oceniany przez wyszukiwarki.
+                  article.our-rules__element.rule--heart
+                    h3.rule__header
+                      | Pięknie
+                    p.rule__body
+                      | Nie zapominamy o tym, że Twoja strona internetowa ma wyglądać pięknie, nowocześnie, według najnowszych trendów. W naszym zespole znajdziesz także grafika, który wykona dla Ciebie niezbędne projekty, np. logo.
+          
+          section.we-believe.row
+            .we-believe__body.container
+              .we-believe__left.col-xs-12.col-md-6
+                p.we-believe__text
+                  | Wierzymy że czyny mówią więcej niż słowa
+              .we-believe__right.col-xs-12.col-md-6
+                a.we-believe__btn.btn(href="#")
+                  | Nasze strony
+          
+          section.experts.row
+            .experts__body.container
+              h3.experts__heading
+                | Zespół najlepszych specjalistów
+              .experts__carousel.col-xs-12
+                
+                // ------ //
+                // slider //
+                // ------ //
+          
+          section.we-do.row
+            .we-do__body.container
+              .we-do_wrapper.col-xs-12.col-md-6.col-md-push-5
+                h3.we-do__heading
+                  | Robimy to, czego aktualnie potrzebujesz
+                
+                ul.we-do__list.works
+                  li.works__item.pages
+                    | Strony wizytówki
+                  li.works__item.blogs
+                    | Blogi
+                  li.works__item.advanced
+                    | Rozbudowane strony WWW
+          
+          section.contact.row
+            .contact__body.container
+              h3.contact__heading
+                | Nie czekaj, skontaktuj się
+              
+              .contact__wrapper--left.col-md-6
+                ul.contact__methods
+                  li.contact__item--telephone
+                    a(href="tel:+48739288022")
+                      | +48 739 288 022
+                  li.contact__item--email
+                    a(href="mailto:kontakt@codeme.eu")
+                      | kontakt[at]codeme.eu
+                  li.contact__item--facebook
+                    a(href="http://www.facebook.com/codemeeu/")
+                      | /codemeeu
+                    
+              .contact__wrapper--right.col-md-6
+                form.form(method="post", action="contact.php")
+                  input.form__field--name(type="text", name="user_name", placeholder="imię i nazwisko")
+                  input.form__field--email(type="email", name="user_email", placeholder="adres e-mail")
+                  input.form__field--subject(type="text", name="user_subject", placeholder="temat wiadomości")
+                  textarea.form__field--message(name="user_message" placeholder="treść wiadomości")
+                  input.form__button--submit(type="submit", value="Wyślij")
+                  
+          footer.footer.row
+            .footer__body.container
+              p.footer__copyright.text-center
+                &copy; 2016 CODEME
+    
+        // import jquery //
+        script(src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous")
+        // our custom js fun staff
+        script(src="js/script.js")
+    
