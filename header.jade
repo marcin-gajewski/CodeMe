@@ -1,0 +1,41 @@
+doctype html
+html(lang='pl')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='description', content='')
+        meta(name='keywords', content='')
+        title CodeME.eu
+        // let's reset all settings
+        link( rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css")
+        // fontawesome cdn for icons
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
+        // yes, we use bootstrap grid
+        link(rel="stylesheet", href="css/bootstrap.css")
+        // main stylesheet link        
+        link(rel="stylesheet", href="css/style.css")
+        // test stylesheet - delete after work done
+        link(rel="stylesheet", href="test.css")
+    body
+        // Here is the place for some fun
+        
+        .container-fluid
+        
+          header.row
+            nav.navbar.navbar--sticky.container
+              .navbar__logo.col-xs-6
+                a.navbar__logo--link(href="#")
+                  img.navbar__logo--image.img-responsive(alt="Brand", src="img/logo.png")
+              .navbar__navigation.col-xs-6.text-right
+                button(type="button").navbar__hamburger.fa.fa-bars
+            .header__content.container
+            
+              h3.header__heading
+                | Czyny mówią więcej...
+              p.header__body
+                | Jesteś w CodeMe, więc prawdopodobnie szukasz kogoś, kto wykona dla Ciebie profesjonalną stronę internetową. Dobrze trafiłeś!
+              
+              a.header__btn.btn(href="#")
+                | Nasze strony
+              a.header__btn.btn(href="#")
+                | Zatrudnij nas
