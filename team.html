@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>CodeME.eu</title>
+    <!-- let's reset all settings-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <!-- fontawesome cdn for icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- yes, we use bootstrap grid-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- main stylesheet link-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- test stylesheet - delete after work done-->
+    <link rel="stylesheet" href="test.css">
+  </head>
+  <body>
+    <!-- Here is the place for some fun-->
+    <div class="container-fluid">
+      <header class="row">
+        <nav class="navbar navbar--sticky container">
+          <div class="navbar__logo col-xs-6"><a class="navbar__logo--link" href="#"><img class="navbar__logo--image img-responsive" alt="Brand" src="img/logo.png"></a></div>
+          <div class="navbar__navigation col-xs-6 text-right">
+            <button class="navbar__hamburger fa fa-bars" type="button"></button>
+          </div>
+        </nav>
+        <div class="header__content container">
+          <h3 class="header__heading">Czyny mówią więcej...</h3>
+          <p class="header__body">Jesteś w CodeMe, więc prawdopodobnie szukasz kogoś, kto wykona dla Ciebie profesjonalną stronę internetową. Dobrze trafiłeś!</p><a class="header__btn btn" href="#">Nasze strony</a><a class="header__btn btn" href="#">Zatrudnij nas</a>
+        </div>
+      </header>
+      <section class="team row">
+        <div class="team__body container">
+          <h2 class="team__heading">Zespół najlepszych specjalistów</h2>
+          <nav class="team__types">
+            <ul class="team__types--list types">
+              <li class="members__item"><a class="member__type active" href="#" title="Zespół">Zespół</a></li>
+              <li class="members__item"><a class="member__type" href="#" title="Front-End Developer">Front-End Developer</a></li>
+              <li class="members__item"><a class="member__type" href="#" title="Back-End Developer">Back-End Developer</a></li>
+              <li class="members__item"><a class="member__type" href="#" title="Designer">Designer</a></li>
+              <li class="members__item"><a class="member__type" href="#" title="SEO/SEM Specialist">SEO/SEM Specialist</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="team__members container-fluid">
+          <div class="project col-xs-6 col-sm-4 col-lg-3">
+            <div class="team__member"><img class="member__photo"/>
+              <h5 class="member__name"></h5>
+              <h6 class="member__position"></h6>
+              <p class="member__about"></p>
+            </div>
+          </div>
+          <div class="project col-xs-6 col-sm-4 col-lg-3">
+            <div class="team__member"><img class="member__photo"/>
+              <h5 class="member__name"></h5>
+              <h6 class="member__position"></h6>
+              <p class="member__about"></p>
+            </div>
+          </div>
+          <div class="project col-xs-6 col-sm-4 col-lg-3">
+            <div class="team__member"><img class="member__photo"/>
+              <h5 class="member__name"></h5>
+              <h6 class="member__position"></h6>
+              <p class="member__about"></p>
+            </div>
+          </div>
+          <div class="project col-xs-6 col-sm-4 col-lg-3">
+            <div class="team__member"><img class="member__photo"/>
+              <h5 class="member__name"></h5>
+              <h6 class="member__position"></h6>
+              <p class="member__about"></p>
+            </div>
+          </div>
+          <div class="project col-xs-6 col-sm-4 col-lg-3">
+            <div class="team__member"><img class="member__photo"/>
+              <h5 class="member__name"></h5>
+              <h6 class="member__position"></h6>
+              <p class="member__about"></p>
+            </div>
+          </div>
+          <div class="project col-xs-6 col-sm-4 col-lg-3">
+            <div class="team__member"><img class="member__photo"/>
+              <h5 class="member__name"></h5>
+              <h6 class="member__position"></h6>
+              <p class="member__about"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="we-believe row">
+        <div class="we-believe__body container">
+          <div class="we-believe__left col-xs-12 col-md-6">
+            <p class="we-believe__text">Wierzymy że czyny mówią więcej niż słowa</p>
+          </div>
+          <div class="we-believe__right col-xs-12 col-md-6"><a class="we-believe__btn btn" href="#">Nasze strony</a></div>
+        </div>
+      </section>
+      <section class="contact row">
+        <div class="contact__body container">
+          <h3 class="contact__heading">Nie czekaj, skontaktuj się</h3>
+          <div class="contact__wrapper--left col-md-6">
+            <ul class="contact__methods">
+              <li class="contact__item--telephone"><a href="tel:+48739288022">+48 739 288 022</a></li>
+              <li class="contact__item--email"><a href="mailto:kontakt@codeme.eu">kontakt[at]codeme.eu</a></li>
+              <li class="contact__item--facebook"><a href="http://www.facebook.com/codemeeu/">/codemeeu</a></li>
+            </ul>
+          </div>
+          <div class="contact__wrapper--right col-md-6">
+            <form class="form" method="post" action="contact.php">
+              <input class="form__field--name" type="text" name="user_name" placeholder="imię i nazwisko">
+              <input class="form__field--email" type="email" name="user_email" placeholder="adres e-mail">
+              <input class="form__field--subject" type="text" name="user_subject" placeholder="temat wiadomości">
+              <textarea class="form__field--message" name="user_message" placeholder="treść wiadomości"></textarea>
+              <input class="form__button--submit" type="submit" value="Wyślij">
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer row">
+        <div class="footer__body container">
+          <p class="footer__copyright text-center">&copy; 2016 CODEME</p>
+        </div>
+      </footer>
+      <!-- import jquery //-->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      <!-- our custom js fun staff-->
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>
