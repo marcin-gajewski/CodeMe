@@ -1,0 +1,103 @@
+mixin left-right(heading, icon, text, photo)
+  article.service.row
+    .service__description.col-xs-12.col-md-6
+      .service__description--wrapper.text-right
+        h4(class="service__description--header " + icon)
+          | #{heading}
+        p.services__description--text
+          | #{text}
+    .service__image.col-xs-12.col-md-6
+      .service__image--container
+        img.service__image--img(src="#{photo}", alt="#{heading}")
+        
+mixin right-left(heading, icon, text, photo)
+  article.service.row
+    .service__description.col-xs-12.col-md-6.col-md-push-6
+      .service__description--wrapper
+        h4(class="service__description--header " + icon)
+          | #{heading}
+        p.services__description--text
+          | #{text}
+    .service__image.col-xs-12.col-md-6.col-md-pull-6
+      .service__image--container
+        img.service__image--img(src="#{photo}", alt="#{heading}")
+        
+mixin portfolio-element(title, category)
+  .project.col-xs-6.col-sm-4.col-lg-3
+    .project__info
+      h5.project__title
+      h6.project__category
+      a.project__link
+        span.search-icon
+
+extends layout
+
+append sub_content
+  section.portfolio.row
+    .portfolio__body.container
+      h2.portfolio__heading
+        | W naszych projektach<br>
+        | spełaniamy Twoje wymagania
+      nav.portfolio__types
+        ul.portfolio__types--list.types
+          li.types__item
+            a.portfolio__type.active(href="#", title="Wszystkie")
+              | Wszystkie
+          li.types__item
+            a.portfolio__type(href="#", title="Wizytówki")
+              | Wizytówki
+          li.types__item
+            a.portfolio__type(href="#", title="CMS")
+              | CMS
+          li.types__item
+            a.portfolio__type(href="#", title="One Page")
+              | One Page
+          li.types__item
+            a.portfolio__type(href="#", title="Landing Page")
+              | Landing Page
+
+    .portfolio__projects.container-fluid
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+      +portfolio-element('Project Title', 'Project category')
+
+  section.contact.row
+    .contact__body.container
+      h3.contact__heading
+        | Nie czekaj, skontaktuj się
+
+      .contact__wrapper--left.col-md-6
+        ul.contact__methods
+          li.contact__item--telephone
+            a(href="tel:+48739288022")
+              | +48 739 288 022
+          li.contact__item--email
+            a(href="mailto:kontakt@codeme.eu")
+              | kontakt[at]codeme.eu
+          li.contact__item--facebook
+            a(href="http://www.facebook.com/codemeeu/")
+              | /codemeeu
+
+      .contact__wrapper--right.col-md-6
+        form.form(method="post", action="contact.php")
+          input.form__field--name(type="text", name="user_name", placeholder="imię i nazwisko")
+          input.form__field--email(type="email", name="user_email", placeholder="adres e-mail")
+          input.form__field--subject(type="text", name="user_subject", placeholder="temat wiadomości")
+          textarea.form__field--message(name="user_message" placeholder="treść wiadomości")
+          input.form__button--submit(type="submit", value="Wyślij")

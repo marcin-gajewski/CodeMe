@@ -23,6 +23,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+html * {
+  box-sizing: inherit; }
+
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -58,3 +61,15 @@ h4, .small {
 p {
   font-size: 1.4em;
   line-height: 2.2rem; }
+
+img {
+  max-width: 100%; }
+
+
+/*********************
+ PORTFOLIO ELEMENTS
+**********************/
+
+.portfolio .project {
+  border: solid red 1px;
+  min-height: 150px; }
